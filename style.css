@@ -93,7 +93,7 @@ body {
 
 } 
 #buttons-wrapper button:focus {
-    filter: contrast(5000) saturate(1000000) brightness(10000);
+    filter: saturate(1000000) brightness(10000);
 }
 
 #buttons-wrapper button:nth-child(1) {
