@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    background-color: rgb(0, 0, 0);
+    gap: 50px;
+}
+
+#menu > button {
+    border: none;
+    border-radius: 100px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+#menu > div {
+    width: 100%;
+    max-width: 400px;
+}
+
+#menu > div > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.7;
+}
+
+#menu {
+    border-radius: 25px;
+    height: 80vh;
+    width: 80vw;
+    max-width: 800px;
+    min-width: 300px;
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(19, 19, 19, 0.808);
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    color: white;
+    text-align: center;
+    display: grid;
+    gap: 20px;
+    align-content: center;
+    justify-items: center;
+}
+
+#buttons-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vmin;
+    width: 65vmin;
+}
+
+#buttons-wrapper button {
+    height: 30vmin;
+    aspect-ratio: 1;
+    border-radius: 15px;
+    border: none;
+    filter: contrast(1) saturate(1);
+
+} 
+#buttons-wrapper button:focus {
+    filter: contrast(5000) saturate(1000000) brightness(10000);
+}
+
+#buttons-wrapper button:nth-child(1) {
+    background-color: rgb(189, 11, 11);
+    border-top-left-radius: 95%;
+    border-bottom-right-radius: 50%;
+}
+#buttons-wrapper button:nth-child(1):focus {
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.678);
+}
+#buttons-wrapper button:nth-child(2) {
+    background-color: rgb(12, 12, 179);
+    border-top-right-radius: 95%;
+    border-bottom-left-radius: 50%;
+}
+#buttons-wrapper button:nth-child(2):focus {
+    box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.541);
+}
+#buttons-wrapper button:nth-child(3) {
+    background-color: rgb(187, 187, 9);
+    border-bottom-left-radius: 95%;
+    border-top-right-radius: 50%;
+}
+#buttons-wrapper button:nth-child(3):focus {
+    box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.596);
+}
+#buttons-wrapper button:nth-child(4) {
+    background-color: green;
+    border-bottom-right-radius: 95%;
+    border-top-left-radius: 50%;
+}
+#buttons-wrapper button:nth-child(4):focus {
+    box-shadow: 0px 0px 20px rgba(0, 128, 0, 0.507);
+}
